@@ -1,17 +1,17 @@
 version: "3.8"
 
 services:
-    react-app:
-        image: "node:12-alpine"
-        working_dir: /app
-        stdin_open: true
-        volumes:
-            - .:/app
+  react-app:
+    image: "node:12-alpine"
+    working_dir: /app
+    stdin_open: true
+    volumes:
+      - .:/app
 
-        ports:
-            - 5000:5000
+    ports:
+      - 5000:5000
 
-        environment:
-            - PORT=5000
+    environment:
+      - PORT=5000
 
-        command: sh ./docker-entrypoint.sh
+    command: sh ./docker-entrypoint.sh
