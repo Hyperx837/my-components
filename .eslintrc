@@ -8,8 +8,7 @@
     "eslint:recommended",
     "plugin:react/recommended",
     "airbnb",
-    "prettier",
-    "import"
+    "prettier"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -18,13 +17,11 @@
     "ecmaVersion": 12,
     "sourceType": "module"
   },
-  "plugins": ["react", "prettier", "import"],
+  "plugins": ["react", "prettier"],
   "rules": {},
   "settings": {
-    "import/resolver": {
-      "node": {
-        "moduleDirectory": ["node_modules", "src/"]
+      "import/resolver": {
+        "typescript": {}
       }
-    }
   }
 }
