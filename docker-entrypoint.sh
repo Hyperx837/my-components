@@ -5,12 +5,10 @@ if [[ ! -d node_modules ]]; then
     
     yarn add -D eslint eslint-config-airbnb eslint-config-prettier \
     eslint-plugin-prettier eslint-plugin-react eslint-plugin-react-hooks \
-    node-sass@4.14.1 prettier typescript @types/node @types/react \
-    @types/react-dom @types/jest eslint-plugin-import eslint-import-resolver-typescript \
-
+    node-sass@4.14.1 prettier eslint-import-resolver-typescript \
+    eslint-plugin-import
     
-    yarn add prop-types
 fi
 
 
-yarn start
+sh
