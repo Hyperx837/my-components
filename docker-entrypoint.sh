@@ -10,5 +10,4 @@ if [[ ! -d node_modules ]]; then
     
 fi
 
-
-sh
+yarn start

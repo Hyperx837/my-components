@@ -13,5 +13,5 @@ services:
 
     environment:
       - PORT=5000
-
+      - TERM=xterm-256color
     command: sh ./docker-entrypoint.sh
