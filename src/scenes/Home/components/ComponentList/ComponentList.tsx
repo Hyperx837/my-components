@@ -2,10 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ComponentList = () => (
-  // eslint-disable-next-line
   <ul>
     <li>
-      <Link to="/component/idsadf">file</Link>
+      <Link to="/components/TimePicker">Time Picker</Link>
     </li>
   </ul>
 );

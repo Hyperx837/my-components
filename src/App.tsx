@@ -1,15 +1,15 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import ComponentList from "scenes/Home/components/ComponentList/ComponentList";
-import ComponetPv from "scenes/Home/components/ComponentPreview/ComponentPreview";
+import { CompView } from "scenes/ComponentPage";
+import CompList from "scenes/Home";
 import "./App.scss";
 
 const App = () => (
   <div className="App">
     <Router>
       <Switch>
-        <Route path="/component/:comp_name" component={ComponetPv} />
-        <Route path="/" exact component={ComponentList} />
+        <Route path="/components/:compName" component={CompView} />
+        <Route path="/" exact component={CompList} />
       </Switch>
     </Router>
   </div>

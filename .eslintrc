@@ -23,9 +23,11 @@
   "parser": "@typescript-eslint/parser",
   "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "no-use-before-define": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
+    "no-undef": "off",
+    "no-unused-vars": "warn",
+    "@typescript-eslint/no-use-before-define": "error",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
     "camelcase": "warn",
     "import/extensions": [
       "error",
