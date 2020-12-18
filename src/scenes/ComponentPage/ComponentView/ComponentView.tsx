@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { TimePicker } from "scenes/UIDDComponents";
+import "./style.scss";
 
 interface Props {
   match: {
@@ -21,7 +22,7 @@ const ComponentView = ({ match }: Props) => {
   const { compName } = match.params;
   const Component = components[compName];
   return (
-    <div>
+    <div className="uidd-component">
       <Link to="/comp" component={Component} />
     </div>
   );
