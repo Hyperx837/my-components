@@ -1,0 +1,48 @@
+$tablet: 800px;
+
+.uidd-component {
+  background: #1b1a31;
+}
+
+.time-picker {
+  display: grid;
+  width: 60%;
+  height: 60%;
+  color: aliceblue;
+  text-align: center;
+  // align-items: center;
+  gap: 2px;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  overflow: hidden;
+  grid-template-columns: 6fr 4fr;
+  grid-template-rows: 9fr 1fr;
+  div {
+    background: #27264b;
+  }
+  position: relative;
+  min-height: 400px;
+  @media only screen and (max-width: $tablet) {
+    grid-template-rows: 6fr 4fr 0fr 1fr;
+    grid-template-columns: 1fr;
+    height: 80%;
+  }
+}
+.close {
+  position: absolute;
+  // z-index: 1;
+  font-size: 2em;
+  // top: 5px;
+  right: 10px;
+  color: #6b6a6a;
+}
+
+.rel-time {
+  // grid-column: 2/4;
+  grid-row: 2 span / auto;
+}
+
+.abs-time {
+  // grid-row: 1/;
+}
