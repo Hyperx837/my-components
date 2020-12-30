@@ -12,7 +12,7 @@ const AbsTimeForm: React.FC = () => (
       <span className="label-text">To</span>
       <input type="text" id="to" name="to" />
     </label>
-    <Button className="apply">Apply</Button>
+    <Button className="apply">Apply Time Range</Button>
   </form>
 );
 

@@ -1,0 +1,19 @@
+.time-zone {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: grey;
+  span {
+    text-decoration: underline;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  padding: 0 6vh;
+  Button {
+    width: 18%;
+    background-color: #3d3a69;
+    font-weight: bold;
+    color: rgb(177, 176, 176);
+  }
+}

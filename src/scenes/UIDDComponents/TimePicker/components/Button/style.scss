@@ -3,7 +3,5 @@ button.timepicker-button {
   border-radius: 1em;
   width: 10em;
   height: 2em;
-  &:hover {
-    background-color: rgb(80, 0, 126);
-  }
+  cursor: pointer;
 }

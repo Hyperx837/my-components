@@ -1,6 +1,6 @@
 import React from "react";
 import AbsTimeForm from "./components/AbsTimeForm/AbsTimeForm";
-import Button from "./components/Button/Button";
+import TimeZone from "./components/TimeZone/TimeZone";
 import "./style.scss";
 
 const TimePicker = () => (
@@ -11,9 +11,7 @@ const TimePicker = () => (
       <AbsTimeForm />
     </div>
     <div className="rel-time">Relative time range</div>
-    <div className="time-zone">
-      <Button>UTC</Button>
-    </div>
+    <TimeZone />
   </div>
 );
 
