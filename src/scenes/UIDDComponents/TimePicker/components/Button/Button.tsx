@@ -1,17 +1,19 @@
 import React from "react";
+import "./style.scss";
 
-const Button = () => {
-  const styles = {
-    border: "none",
-    borderRadius: "1em",
-    width: "10em",
-    height: "2em",
-  };
-  return (
-    <button style={styles} type="submit">
-      button
-    </button>
-  );
+interface Props {
+  children: React.ReactNode;
+  className?: string;
+}
+
+const Button = ({ children, className }: Props) => (
+  <button className={`timepicker-button ${className}`} type="submit">
+    {children}
+  </button>
+);
+
+Button.defaultProps = {
+  className: "",
 };
 
 export default Button;

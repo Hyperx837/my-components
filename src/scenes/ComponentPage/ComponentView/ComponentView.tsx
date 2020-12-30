@@ -3,19 +3,19 @@ import { Link } from "react-router-dom";
 import { TimePicker } from "scenes/UIDDComponents";
 import "./style.scss";
 
-interface Props {
+type Props = {
   match: {
     params: {
       compName: string;
     };
   };
-}
+};
 
 interface MapFunctionComponent {
   [key: string]: React.FunctionComponent;
 }
 
-const ComponentView = ({ match }: Props) => {
+const ComponentView: React.FC<Props> = ({ match }: Props) => {
   const components: MapFunctionComponent = {
     TimePicker,
   };

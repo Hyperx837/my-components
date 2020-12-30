@@ -9,7 +9,8 @@ $tablet: 800px;
   width: 60%;
   height: 60%;
   color: aliceblue;
-  text-align: center;
+  box-sizing: border-box;
+  // text-align: center;
   // align-items: center;
   gap: 2px;
   max-width: 800px;
@@ -20,6 +21,7 @@ $tablet: 800px;
   grid-template-rows: 9fr 1fr;
   div {
     background: #27264b;
+    box-sizing: border-box;
   }
   position: relative;
   min-height: 400px;
@@ -31,6 +33,7 @@ $tablet: 800px;
 }
 .close {
   position: absolute;
+  cursor: pointer;
   // z-index: 1;
   font-size: 2em;
   // top: 5px;
@@ -40,9 +43,16 @@ $tablet: 800px;
 
 .rel-time {
   // grid-column: 2/4;
+  font-size: 2vh;
   grid-row: 2 span / auto;
 }
 
 .abs-time {
   // grid-row: 1/;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  .text {
+    font-weight: bold;
+    font-size: 2.5vh;
+  }
 }
