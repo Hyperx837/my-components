@@ -18,17 +18,17 @@ input {
   height: 5vh;
   border-radius: 4px;
   &:focus {
-    border-color: #928a43;
-    border-width: 3px;
+    border-color: #615c2a;
+    border-width: 2.5px;
   }
 }
 
-Button.apply {
+form button {
   height: 4vh;
   color: aliceblue;
   font-weight: bolder;
   width: 50%;
-  height: 5vh;
+  height: 6vh;
   border-radius: 3em;
   background-color: #6d70fd;
 }

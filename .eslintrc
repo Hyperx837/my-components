@@ -24,6 +24,7 @@
   "plugins": ["@typescript-eslint", "prettier", "import"],
   "rules": {
     "no-use-before-define": "off",
+    "react/button-has-type": 0,
     "no-undef": "off",
     "no-unused-vars": "warn",
     "@typescript-eslint/no-use-before-define": "error",

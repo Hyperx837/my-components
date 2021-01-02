@@ -1,6 +1,6 @@
 $tablet: 800px;
 
-.uidd-component {
+body {
   background: #1b1a31;
 }
 
@@ -10,8 +10,6 @@ $tablet: 800px;
   height: 60%;
   color: aliceblue;
   box-sizing: border-box;
-  // text-align: center;
-  // align-items: center;
   gap: 2px;
   max-width: 800px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -25,30 +23,26 @@ $tablet: 800px;
   }
   position: relative;
   min-height: 400px;
-  @media only screen and (max-width: $tablet) {
-    grid-template-rows: 6fr 4fr 0fr 1fr;
-    grid-template-columns: 1fr;
-    height: 80%;
-  }
 }
 .close {
   position: absolute;
   cursor: pointer;
-  // z-index: 1;
   font-size: 2em;
-  // top: 5px;
   right: 10px;
   color: #6b6a6a;
 }
-
-.rel-time {
-  // grid-column: 2/4;
-  font-size: 2vh;
-  grid-row: 2 span / auto;
+@media only screen and (max-width: $tablet) {
+  .time-picker {
+    grid-template-rows: 6fr 4fr 1fr;
+    grid-template-columns: 1fr;
+    height: 80%;
+  }
+  .rel-time {
+    grid-row: 1 span / auto;
+  }
 }
 
 .abs-time {
-  // grid-row: 1/;
   padding-top: 5vh;
   padding-left: 5vh;
   .text {

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "../Button/Button";
 import "./style.scss";
 
 const AbsTimeForm: React.FC = () => (
@@ -12,7 +11,7 @@ const AbsTimeForm: React.FC = () => (
       <span className="label-text">To</span>
       <input type="text" id="to" name="to" />
     </label>
-    <Button className="apply">Apply Time Range</Button>
+    <button type="submit">Apply Time Range</button>
   </form>
 );
 

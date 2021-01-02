@@ -1,5 +1,6 @@
 import React from "react";
 import AbsTimeForm from "./components/AbsTimeForm/AbsTimeForm";
+import RelTime from "./components/RelTime/RelTime";
 import TimeZone from "./components/TimeZone/TimeZone";
 import "./style.scss";
 
@@ -10,7 +11,7 @@ const TimePicker = () => (
       <span className="text">Absolute time range</span>
       <AbsTimeForm />
     </div>
-    <div className="rel-time">Relative time range</div>
+    <RelTime />
     <TimeZone />
   </div>
 );

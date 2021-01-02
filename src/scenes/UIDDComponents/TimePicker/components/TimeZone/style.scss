@@ -10,10 +10,12 @@
     cursor: pointer;
   }
   padding: 0 6vh;
-  Button {
-    width: 18%;
+  button {
+    width: 22%;
+    height: 50%;
     background-color: #3d3a69;
     font-weight: bold;
     color: rgb(177, 176, 176);
+    border-radius: 1em;
   }
 }

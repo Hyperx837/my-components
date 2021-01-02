@@ -1,0 +1,32 @@
+.rel-time {
+  padding-top: 3.5vh;
+  font-size: 2vh;
+  grid-row: 2 span / auto;
+  // gap: 1em;
+  // height: 500px;
+  display: flex;
+  flex-direction: column;
+  .text {
+    padding: 0 3vh 3vh 3vh;
+    font-weight: 500;
+  }
+  .pick-rel-time {
+    // display: grid;
+    height: 500px;
+    // gap: 0.5em;
+    flex: 1;
+    button {
+      height: 5vh;
+      margin: 0.5vh 2vh;
+      background-color: #27264b;
+      border-radius: 3vh;
+      color: aliceblue;
+      width: 90%;
+      &:hover {
+        background-color: #252341;
+      }
+
+      // padding
+    }
+  }
+}
