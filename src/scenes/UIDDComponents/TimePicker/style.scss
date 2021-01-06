@@ -23,6 +23,9 @@ body {
   }
   position: relative;
   min-height: 400px;
+  .wrapper{
+    height: 100%;
+  }
 }
 .close {
   position: absolute;
@@ -33,18 +36,35 @@ body {
 }
 @media only screen and (max-width: $tablet) {
   .time-picker {
-    grid-template-rows: 6fr 4fr 1fr;
-    grid-template-columns: 1fr;
-    height: 80%;
+    all:revert;
+    width: 60%;
+    height: 60%;
+    color: aliceblue;
+    box-sizing: border-box;
+    gap: 2px;
+    max-width: 800px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
+    overflow: hidden;
+    height: 90%;
+    width: 80%;
+    position: relative;
+    .wrapper{
+      height: 45%;
+    }
   }
   .rel-time {
     grid-row: 1 span / auto;
   }
+
+  .abs-time {
+    height: 45%;
+  }
 }
 
 .abs-time {
-  padding-top: 5vh;
-  padding-left: 5vh;
+  padding: 4.5vh;
+
   .text {
     font-weight: bold;
     font-size: 2.5vh;

@@ -11,7 +11,9 @@ const TimePicker = () => (
       <span className="text">Absolute time range</span>
       <AbsTimeForm />
     </div>
-    <RelTime />
+    <div className='wrapper'>
+      <RelTime />
+    </div>
     <TimeZone />
   </div>
 );

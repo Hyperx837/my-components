@@ -1,3 +1,5 @@
+$tablet: 800px;
+
 .time-zone {
   display: flex;
   align-items: center;
@@ -17,5 +19,12 @@
     font-weight: bold;
     color: rgb(177, 176, 176);
     border-radius: 1em;
+  }
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .time-zone {
+    height: 10%;
   }
 }
